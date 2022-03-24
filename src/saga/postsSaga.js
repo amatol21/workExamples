@@ -8,7 +8,7 @@ function* postsSagaWorker() {
 }
 
 function* postsSagaWatcher() {
-	yield takeEvery('posts/getPostsFetch', postsSagaWorker);
+	yield takeEvery('postsReducer/getPostsFetch', postsSagaWorker);
 }
 
 export default postsSagaWatcher;
